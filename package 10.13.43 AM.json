@@ -1,0 +1,58 @@
+{
+  "name": "brand_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "node server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "John Davis",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.4.16",
+    "archiver": "^5.0.0",
+    "argon2-ffi": "^1.1.2",
+    "aws-sdk": "^2.738.0",
+    "bluebird": "^3.7.1",
+    "body-parser": "^1.19.0",
+    "child_process": "^1.0.2",
+    "colors": "^1.4.0",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "empty-folder": "^2.0.3",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.9",
+    "express-formidable": "^1.2.0",
+    "express-jwt": "^5.3.1",
+    "fs": "0.0.1-security",
+    "json2csv": "^5.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.16",
+    "mongoose-double": "0.0.1",
+    "nodemailer": "^6.4.11",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "path": "^0.12.7",
+    "plaid": "^8.0.0",
+    "randomstring": "^1.1.5",
+    "sharp": "^0.23.4",
+    "socket.io": "^2.3.0",
+    "socketio-jwt": "^4.5.0",
+    "stripe": "^8.120.0",
+    "uuid": "^3.4.0",
+    "validator": "^12.0.0",
+    "xss": "^1.0.6"
+
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
